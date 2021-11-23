@@ -144,6 +144,6 @@ eeeeeeeeeeeeee
 >Hello World!
 
 ***
-[Poprzednia część](https://github.com/CyberMALab/Petle.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Comming-Soon.git)
+[Poprzednia część](https://github.com/CyberMALab/Instrukcja-wyboru-switch-case.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Comming-Soon.git)
 ***
 &copy; Cyberspace Modelling and Analysis Laboratory
