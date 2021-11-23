@@ -77,7 +77,7 @@ Modyfikatory typów dają nam większą kontrolę nad rozmiarem pamięci zajmowa
 
 Dwa pierwsze (short i long) odpowiadają za rozmiar pamięci zajmowany przez zmienną, i można ich używać ze wszystkimi podstawowymi zmiennymi. Kolejne dwa (signed i unsigned) są odpowiedzialne za typ zapisu danych. W ten sposób zmodyfikujemy zbiór wartości do jakiego może należeć zmienna. Modyfikatorów signed i unsigned nie można używać z typem zmiennej zmiennoprzecinkowej (float i double). Każdy z modyfikatorów można użyć samodzielnie – bez deklarowania typu zmiennej. Tak zadeklarowana zmienna, stanie się domyślnie zmienną całkowitą (zapis  short digit  i short int digit są równoznaczne).  
 
-|Typ|Liczba bitów N|Zakres wartości : -2N-1… 2N-1-1|Kod formatujący|
+|Typ|Liczba bitów N|Zakres wartości : -2^N-1… 2^N-1-1|Kod formatujący|
 | - | - | - | - |
 |`char`|8 |-128 … 127|%c|
 |`short`|16|-32 768 … 32 767|%hd |
