@@ -1,5 +1,5 @@
-## Więcej o typach zmiennych i nie tylko
-### **Zasięg zmiennej**
+# Więcej o typach zmiennych i nie tylko
+## **Zasięg zmiennej**
 W języku C istnieją dwa rodzaje zasięgów zmiennych. Zmienna globalna i zmienna lokalna. We wszystkich przykładach użytych wcześniej, spotkaliśmy się z deklaracją zmiennych lokalnych, gdyż bardzo rzadko używa się zmiennych globalnych. Zmienną globalną zazwyczaj deklaruje się poniżej dyrektywy preprocesora (#include <…>). Jest ona wtedy dostępna w całym kodzie i dla każdej funkcji (o funkcjach mowa w kolejnym rozdziale). Jednak każdy kod da się zapisać bez używania zmiennych globalnych i zazwyczaj unika się jednak ich używania (chociaż czasem są bardzo przydatne). Drugą kwestią są zmienne lokalne. Zmienna lokalna to taka zmienna, do której mamy dostęp tylko w bloku kodu, w którym została zadeklarowana. Blok kodu to kod zawarty pomiędzy nawiasami klamrowymi np. w funkcjach, pętli for, czy instrukcji warunkowej. Do takiej zmiennej nie uda nam się odwołać po zakończeniu tego bloku. 
 
 *Przykład (6.0) zasięg zmiennej*
@@ -67,7 +67,7 @@ int main() {
 >
 >0 1
 
-### **Modyfikatory typów zmiennych oraz stałe**
+## **Modyfikatory typów zmiennych oraz stałe**
 Modyfikatory typów dają nam większą kontrolę nad rozmiarem pamięci zajmowanym przez zmienną oraz, typem przechowywania wartości. W języku C występują 4 modyfikatory:
 
 - short - krótka
