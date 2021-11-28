@@ -70,12 +70,12 @@ int main() {
 ## **Modyfikatory typów zmiennych oraz stałe**
 Modyfikatory typów dają nam większą kontrolę nad rozmiarem pamięci zajmowanym przez zmienną oraz, typem przechowywania wartości. W języku C występują 4 modyfikatory:
 
-- short - krótka
-- long - długa
-- signed – ze znakiem (+ lub -)
-- unsigned – bez znaku (tylko +)
+- `short` - krótka
+- `long` - długa
+- `signed` – ze znakiem (+ lub -)
+- `unsigned` – bez znaku (tylko +)
 
-Dwa pierwsze (short i long) odpowiadają za rozmiar pamięci zajmowany przez zmienną, i można ich używać ze wszystkimi podstawowymi zmiennymi. Kolejne dwa (signed i unsigned) są odpowiedzialne za typ zapisu danych. W ten sposób zmodyfikujemy zbiór wartości do jakiego może należeć zmienna. Modyfikatorów signed i unsigned nie można używać z typem zmiennej zmiennoprzecinkowej (float i double). Każdy z modyfikatorów można użyć samodzielnie – bez deklarowania typu zmiennej. Tak zadeklarowana zmienna, stanie się domyślnie zmienną całkowitą (zapis  short digit  i short int digit są równoznaczne).  
+Dwa pierwsze (`short` i `long`) odpowiadają za rozmiar pamięci zajmowany przez zmienną i można ich używać ze wszystkimi podstawowymi zmiennymi. Kolejne dwa (`signed` i `unsigned`) są odpowiedzialne za typ zapisu danych. W ten sposób zmodyfikujemy zbiór wartości do jakiego może należeć zmienna. Modyfikatorów `signed` i `unsigned` nie można używać z typem zmiennej zmiennoprzecinkowej (`float` i `double`). Każdy z modyfikatorów można użyć samodzielnie – bez deklarowania typu zmiennej. Tak zadeklarowana zmienna, stanie się domyślnie zmienną całkowitą (zapis  `short`  i `short int` są równoznaczne).  
 
 |Typ|Liczba bitów N|Zakres wartości : -2^N-1… 2^N-1-1|Kod formatujący|
 | - | - | - | - |
