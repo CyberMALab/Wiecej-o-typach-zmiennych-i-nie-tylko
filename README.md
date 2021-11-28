@@ -31,7 +31,7 @@ int main() {
 	{
 		int zmienna_lokalna_if=2;
 	} /* poza tym nawiasem klamrowym już zmienna_lokalna_if nie jest już widoczna*/
-printf("%d ",zmienna_globalna); /* dostęp OK */
+		printf("%d ",zmienna_globalna); /* dostęp OK */
  		printf("%d ",zmienna_lokalna_main); /* dostęp OK */
  		printf("%d ",zmienna_lokalna_if); /* BŁĄD !!!*/
 
