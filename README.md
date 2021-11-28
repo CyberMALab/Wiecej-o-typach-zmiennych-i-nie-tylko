@@ -96,7 +96,7 @@ Zmienna typu `long long` istnieje tylko w nowych kompilatorach.
 
 |Typ|Liczba bitów|Liczba cyfr znaczących|Zakres wartości  |Kod formatujący|
 | - | - | - | - | - |
-|`float` |32|7|3.4 ∙10-38… 3.4 ∙1038|` `%f|
+|`float` |32|7|3.4 ∙10-38… 3.4 ∙1038|%f|
 |`double`|64|15|1.7 ∙10-308…1.7 ∙10308|%lf|
 |`long double`|80|19|3.4 ∙10-4932… 1.1 ∙104932|%Lf|
 
