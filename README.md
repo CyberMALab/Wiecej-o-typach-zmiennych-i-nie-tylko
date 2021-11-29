@@ -143,6 +143,10 @@ eeeeeeeeeeeeee
 
 >Hello World!
 
+
+## Zadania do samodzielnego wykonania
+Ze względu na teoretyczny charakter tego rozdziału nie ma tutaj poleceń, które należy wykonać. Zadanie jakie przed Tobą stoi, jest rozsądne używanie poznanych w tym rozdziale typów zmiennych i ich modyfikatorów w dalszych zadaniach programistycznych jakie przed Tobą stoją.
+
 ***
 [Poprzednia część](https://github.com/CyberMALab/Instrukcja-wyboru-switch-case.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Comming-Soon.git)
 ***
