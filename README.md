@@ -31,7 +31,7 @@ int main() {
 	{
 		int zmienna_lokalna_if=2;
 	} /* poza tym nawiasem klamrowym już zmienna_lokalna_if nie jest już widoczna*/
-printf("%d ",zmienna_globalna); /* dostęp OK */
+		printf("%d ",zmienna_globalna); /* dostęp OK */
  		printf("%d ",zmienna_lokalna_main); /* dostęp OK */
  		printf("%d ",zmienna_lokalna_if); /* BŁĄD !!!*/
 
@@ -70,12 +70,12 @@ int main() {
 ## **Modyfikatory typów zmiennych oraz stałe**
 Modyfikatory typów dają nam większą kontrolę nad rozmiarem pamięci zajmowanym przez zmienną oraz, typem przechowywania wartości. W języku C występują 4 modyfikatory:
 
-- short - krótka
-- long - długa
-- signed – ze znakiem (+ lub -)
-- unsigned – bez znaku (tylko +)
+- `short` - krótka
+- `long` - długa
+- `signed` – ze znakiem (+ lub -)
+- `unsigned` – bez znaku (tylko +)
 
-Dwa pierwsze (short i long) odpowiadają za rozmiar pamięci zajmowany przez zmienną, i można ich używać ze wszystkimi podstawowymi zmiennymi. Kolejne dwa (signed i unsigned) są odpowiedzialne za typ zapisu danych. W ten sposób zmodyfikujemy zbiór wartości do jakiego może należeć zmienna. Modyfikatorów signed i unsigned nie można używać z typem zmiennej zmiennoprzecinkowej (float i double). Każdy z modyfikatorów można użyć samodzielnie – bez deklarowania typu zmiennej. Tak zadeklarowana zmienna, stanie się domyślnie zmienną całkowitą (zapis  short digit  i short int digit są równoznaczne).  
+Dwa pierwsze (`short` i `long`) odpowiadają za rozmiar pamięci zajmowany przez zmienną i można ich używać ze wszystkimi podstawowymi zmiennymi. Kolejne dwa (`signed` i `unsigned`) są odpowiedzialne za typ zapisu danych. W ten sposób zmodyfikujemy zbiór wartości do jakiego może należeć zmienna. Modyfikatorów `signed` i `unsigned` nie można używać z typem zmiennej zmiennoprzecinkowej (`float` i `double`). Każdy z modyfikatorów można użyć samodzielnie – bez deklarowania typu zmiennej. Tak zadeklarowana zmienna, stanie się domyślnie zmienną całkowitą (zapis  `short`  i `short int` są równoznaczne).  
 
 |Typ|Liczba bitów N|Zakres wartości : -2^N-1… 2^N-1-1|Kod formatujący|
 | - | - | - | - |
@@ -91,12 +91,13 @@ Dwa pierwsze (short i long) odpowiadają za rozmiar pamięci zajmowany przez zmi
 |`unsigned` (`unsigned int`)|32|0 … 4294 967 295|%u|
 |`unsigned long`|32|0 … 4294 967 295|%ul |
 
+
 W zależności od architektury komputera i kompilatora, zmnienia się rozmiar oraz wartości min i max przedziałów zmiennych typu `int` oraz `unsigned`. 
 Zmienna typu `long long` istnieje tylko w nowych kompilatorach.
 
 |Typ|Liczba bitów|Liczba cyfr znaczących|Zakres wartości  |Kod formatujący|
 | - | - | - | - | - |
-|`float` |32|7|3.4 ∙10-38… 3.4 ∙1038|` `%f|
+|`float` |32|7|3.4 ∙10-38… 3.4 ∙1038|%f|
 |`double`|64|15|1.7 ∙10-308…1.7 ∙10308|%lf|
 |`long double`|80|19|3.4 ∙10-4932… 1.1 ∙104932|%Lf|
 
@@ -143,7 +144,11 @@ eeeeeeeeeeeeee
 
 >Hello World!
 
+
+## Zadania do samodzielnego wykonania
+Ze względu na teoretyczny charakter tego rozdziału nie ma tutaj poleceń, które należy wykonać. Zadanie jakie przed Tobą stoi, jest rozsądne używanie poznanych w tym rozdziale typów zmiennych i ich modyfikatorów w dalszych zadaniach programistycznych jakie przed Tobą stoją.
+
 ***
-[Poprzednia część](https://github.com/CyberMALab/Instrukcja-wyboru-switch-case.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Comming-Soon.git)
+[Poprzednia część](https://github.com/CyberMALab/Instrukcja-wyboru-switch-case.git) | [Spis treści](https://github.com/CyberMALab/Wprowadzenie-do-programowania-w-j-zyku-ANSI-C.git) | [Następna część](https://github.com/CyberMALab/Pierwsze-wlasne-funkcje-i-rekurencja.git)
 ***
 &copy; Cyberspace Modelling and Analysis Laboratory
