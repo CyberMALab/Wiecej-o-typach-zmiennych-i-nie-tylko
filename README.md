@@ -1,6 +1,6 @@
 # Więcej o typach zmiennych i nie tylko
 ## **Zasięg zmiennej**
-W języku C istnieją dwa rodzaje zasięgów zmiennych. Zmienna globalna i zmienna lokalna. We wszystkich przykładach użytych wcześniej, spotkaliśmy się z deklaracją zmiennych lokalnych, gdyż bardzo rzadko używa się zmiennych globalnych. Zmienną globalną zazwyczaj deklaruje się poniżej dyrektywy preprocesora (#include <…>). Jest ona wtedy dostępna w całym kodzie i dla każdej funkcji (o funkcjach mowa w kolejnym rozdziale). Jednak każdy kod da się zapisać bez używania zmiennych globalnych i zazwyczaj unika się jednak ich używania (chociaż czasem są bardzo przydatne). Drugą kwestią są zmienne lokalne. Zmienna lokalna to taka zmienna, do której mamy dostęp tylko w bloku kodu, w którym została zadeklarowana. Blok kodu to kod zawarty pomiędzy nawiasami klamrowymi np. w funkcjach, pętli for, czy instrukcji warunkowej. Do takiej zmiennej nie uda nam się odwołać po zakończeniu tego bloku. 
+W języku C istnieją dwa rodzaje zasięgów zmiennych. Zmienna globalna i zmienna lokalna. We wszystkich przykładach użytych wcześniej, spotkaliśmy się z deklaracją zmiennych lokalnych, gdyż bardzo rzadko używa się zmiennych globalnych. Zmienną globalną zazwyczaj deklaruje się poniżej dyrektywy preprocesora (#include). Jest ona wtedy dostępna w całym kodzie i dla każdej funkcji (o funkcjach mowa w kolejnym rozdziale). Jednak każdy kod da się zapisać bez używania zmiennych globalnych i zazwyczaj unika się jednak ich używania (chociaż czasem są bardzo przydatne). Drugą kwestią są zmienne lokalne. Zmienna lokalna to taka zmienna, do której mamy dostęp tylko w bloku kodu, w którym została zadeklarowana. Blok kodu to kod zawarty pomiędzy nawiasami klamrowymi np. w funkcjach, pętli for, czy instrukcji warunkowej. Do takiej zmiennej nie uda nam się odwołać poza tym blokiem.
 
 *Przykład (6.0) zasięg zmiennej*
 ```
@@ -91,7 +91,8 @@ Dwa pierwsze (`short` i `long`) odpowiadają za rozmiar pamięci zajmowany przez
 |`unsigned` (`unsigned int`)|32|0 … 4294 967 295|%u|
 |`unsigned long`|32|0 … 4294 967 295|%ul |
 
-W zależności od systemu zapisu plików komputera i kompilatora, rozmiar oraz wartości min i max przedziałów zmiennych typu `int` oraz `unsigned` występują w dwóch wariantach. 
+
+W zależności od architektury komputera i kompilatora, zmnienia się rozmiar oraz wartości min i max przedziałów zmiennych typu `int` oraz `unsigned`. 
 Zmienna typu `long long` istnieje tylko w nowych kompilatorach.
 
 |Typ|Liczba bitów|Liczba cyfr znaczących|Zakres wartości  |Kod formatujący|
@@ -108,13 +109,13 @@ const flaot PI=3.14159265359;
 /* mamy pewność że zmiennej PI nic nie zmodyfikuje – unikniemy błędów w obliczeniach*/
 ```
 
-W języku C można też stworzyć *stałą symboliczną*. Do tego używa się dyrektywy preprocesora #define. Definicja takiej stałej symbolicznej różni się od zmiennej. Zmienna jest zapisywana do pamięci, natomiast stała symboliczna, jest wykrywana przez kompilator w chwili kompilacji zastąpi nazwę ciągiem znaków. W przykładzie 6.3, wpisując w dowolnym miejscu w kodzie `ARRAY_SIZE` kompilator potraktuje jakby było wpisane 6.
+W języku C można też stworzyć *stałą symboliczną*. Używa się do tego dyrektywy preprocesora #define. Definicja takiej stałej symbolicznej różni się od zmiennej. Zmienna jest zapisywana do pamięci, natomiast stała symboliczna, jest wykrywana przez kompilator w chwili kompilacji zastąpi nazwę ciągiem znaków. W przykładzie 6.3, wpisując w dowolnym miejscu w kodzie `ARRAY_SIZE` kompilator potraktuje jakby było wpisane 6.
 
 *Przykład (6.3) Deklaracja stałej symbolicznej*
 
 `#define ARRAY_SIZE 6`
 
-Poniżej zaimplementowany jest przykład w formie żartu, co można zrobić ze stałą symboliczną. Program działa, ale nie polecam programować w ten sposób programować.
+Poniżej zaimplementowany jest przykład w formie żartu, co można zrobić ze stałą symboliczną. Program działa, ale nie polecam w ten sposób programować.
 
 *Przykład (6.4) Nadużycie stałych symbolicznych*
 ```
