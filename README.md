@@ -91,7 +91,7 @@ Dwa pierwsze (`short` i `long`) odpowiadają za rozmiar pamięci zajmowany przez
 |`unsigned` (`unsigned int`)|32|0 … 4294 967 295|%u|
 |`unsigned long`|32|0 … 4294 967 295|%ul |
 
-W zależności od systemu zapisu plików komputera i kompilatora, rozmiar oraz wartości min i max przedziałów zmiennych typu `int` oraz `unsigned`. 
+W zależności od systemu zapisu plików komputera i kompilatora, rozmiar oraz wartości min i max przedziałów zmiennych typu `int` oraz `unsigned` występują w dwóch wariantach. 
 Zmienna typu `long long` istnieje tylko w nowych kompilatorach.
 
 |Typ|Liczba bitów|Liczba cyfr znaczących|Zakres wartości  |Kod formatujący|
