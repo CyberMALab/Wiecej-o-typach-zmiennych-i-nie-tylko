@@ -1,6 +1,6 @@
 # Więcej o typach zmiennych i nie tylko
 ## **Zasięg zmiennej**
-W języku C istnieją dwa rodzaje zasięgów zmiennych. Zmienna globalna i zmienna lokalna. We wszystkich przykładach użytych wcześniej, spotkaliśmy się z deklaracją zmiennych lokalnych, gdyż bardzo rzadko używa się zmiennych globalnych. Zmienną globalną zazwyczaj deklaruje się poniżej dyrektywy preprocesora (#include). Jest ona wtedy dostępna w całym kodzie i dla każdej funkcji (o funkcjach mowa w kolejnym rozdziale). Jednak każdy kod da się zapisać bez używania zmiennych globalnych i zazwyczaj unika się jednak ich używania (chociaż czasem są bardzo przydatne). Drugą kwestią są zmienne lokalne. Zmienna lokalna to taka zmienna, do której mamy dostęp tylko w bloku kodu, w którym została zadeklarowana. Blok kodu to kod zawarty pomiędzy nawiasami klamrowymi np. w funkcjach, pętli for, czy instrukcji warunkowej. Do takiej zmiennej nie uda nam się odwołać poza tym blokiem.
+W języku C istnieją dwa rodzaje zasięgów zmiennych. Zmienna globalna i zmienna lokalna. We wszystkich przykładach użytych wcześniej, spotkaliśmy się z deklaracją zmiennych lokalnych, gdyż bardzo rzadko używa się zmiennych globalnych. Zmienną globalną zazwyczaj deklaruje się poniżej dyrektywy preprocesora `#include`. Jest ona wtedy dostępna w całym kodzie i dla każdej funkcji (o funkcjach mowa będzie w kolejnym rozdziale). Jednak każdy kod da się zapisać bez używania zmiennych globalnych i zazwyczaj unika się ich używania (chociaż czasem są przydatne). W zamian za zmienne globalne używa się zmiennych lokalnych. Zmienna lokalna to taka zmienna, do której mamy dostęp tylko w bloku kodu, w którym została zadeklarowana. Blok kodu to kod zawarty pomiędzy nawiasami klamrowymi np. w funkcjach, pętli for, czy instrukcji warunkowej. Do takiej zmiennej nie uda nam się odwołać poza tym blokiem.
 
 *Przykład (6.0) zasięg zmiennej*
 ```
@@ -109,7 +109,7 @@ const flaot PI=3.14159265359;
 /* mamy pewność że zmiennej PI nic nie zmodyfikuje – unikniemy błędów w obliczeniach*/
 ```
 
-W języku C można też stworzyć *stałą symboliczną*. Używa się do tego dyrektywy preprocesora #define. Definicja takiej stałej symbolicznej różni się od zmiennej. Zmienna jest zapisywana do pamięci, natomiast stała symboliczna, jest wykrywana przez kompilator w chwili kompilacji zastąpi nazwę ciągiem znaków. W przykładzie 6.3, wpisując w dowolnym miejscu w kodzie `ARRAY_SIZE` kompilator potraktuje jakby było wpisane 6.
+W języku C można też stworzyć *stałą symboliczną*. Używa się do tego dyrektywy preprocesora #define. Definicja takiej stałej symbolicznej różni się od zmiennej. Zmienna jest zapisywana do pamięci, natomiast stała symboliczna, jest wykrywana przez kompilator, a jej oznaczenie jest zastępowane odpowiednią frazą w chwili kompilwania (nie jest zapisywana w pamięci). W przykładzie 6.3, wpisując w dowolnym miejscu w kodzie `ARRAY_SIZE` kompilator potraktuje jakby było wpisane 6.
 
 *Przykład (6.3) Deklaracja stałej symbolicznej*
 
